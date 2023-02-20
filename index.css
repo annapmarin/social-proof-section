@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-family: 'League Spartan', sans-serif;
+  background: 
+  url(./images/bg-pattern-top-desktop.svg)top left no-repeat,
+  url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.first-section {
+  display: flex;
+  width: 100vw;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 400px;
+  padding: 70px;
+}
+
+.title p {
+  color:hsl(300, 43%, 22%);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.rating {
+  width: 630px;
+  padding-right: 150px;
+  padding-left: 20px;
+}
+
+.rating-one {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  margin-left: 30px;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 80px 25px 25px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.rating-one p {
+  margin-left: 25px;
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.rating-two {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 70px;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 80px 25px 25px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.rating-two p {
+  margin-left: 25px;
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.rating-three {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 130px;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 80px 25px 25px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+}
+
+.rating-three p {
+  margin-left: 25px;
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.reviews {
+  display: flex;
+  gap: 30px;
+  color: white;
+  margin-left: 110px;
+  margin-right: 110px;
+  max-width: 1250px;
+}
+
+.reviews img {
+  border-radius: 50%;
+  width: 50px;
+  position: absolute;
+}
+
+.reviews h2, .reviews h3 {
+  margin-left: 70px;
+}
+
+.reviews h2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.reviews h3 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.reviews p {
+  font-size: 1.4rem;
+  color:hsl(300, 24%, 96%);
+  margin-top: 30px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 30px;
+}
+
+.reviews div {
+  background-color:hsl(300, 43%, 22%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  html {
+  background: 
+  url(./images/bg-pattern-top-mobile.svg)top left no-repeat,
+  url(./images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+  width: 100vw;
+  height: auto;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0;
+    width: 350px;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+
+  .rating {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .rating-one {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 50px 25px 25px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    max-width: 310px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .rating-one p {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .rating-two {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 25px 50px 25px 25px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    max-width: 310px;
+  }
+  
+  .rating-two p {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .rating-three {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 0;
+    padding: 25px 50px 25px 25px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    max-width: 310px;
+  }
+  
+  .rating-three p {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .reviews {
+    flex-direction: column;
+    margin-top: 40px;
+    margin: 0 auto;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    width: 370px;
+  }
+
+}
